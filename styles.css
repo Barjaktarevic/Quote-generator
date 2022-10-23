@@ -24,6 +24,7 @@ body {
     border-radius: 1vh;
     background-color: rgba(255, 255, 255, 0.55);
     padding: 2vh 1vw;
+    display: flex;
 }
 
 .fa-quote-left {
@@ -78,8 +79,45 @@ button:active {
     color: #38a1f3;
 }
 
-@media screen and (max-width: 400px) {
+.loader {
+    border: 5vh solid #f3f3f3; 
+    border-top: 5vh solid #333; 
+    border-radius: 50%;
+    width: 12vw;
+    height: 12vw;
+    animation: spin 2s linear infinite;
+    display: none;
+  }
+  
+.made-by {
+    position: absolute;
+    bottom: 1%;
+    right: 1%;
+    font-size: 5vmin;
+    text-align: center;
+}
+
+.github-link {
+    text-decoration:none;
+    color: black;
+    padding: 1vmin;
+    border-radius: 0.5vh;
+}
+
+.github-link:hover {
+    background-color:rgba(0, 0, 0, 0.85);
+    color: white;
+    
+    transition: 400ms ease-in-out;
+}
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+@media screen and (max-width: 500px) {
     .quote-container {
-        margin-top: 30vmin;
+        margin-top: 500px;
     }
 }
