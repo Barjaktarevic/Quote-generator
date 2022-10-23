@@ -24,7 +24,7 @@ body {
     border-radius: 1vh;
     background-color: rgba(255, 255, 255, 0.55);
     padding: 2vh 1vw;
-    display: flex;
+    display: none;
 }
 
 .fa-quote-left {
@@ -116,8 +116,3 @@ button:active {
     100% { transform: rotate(360deg); }
   }
 
-@media screen and (max-width: 500px) {
-    .quote-container {
-        margin-top: 100px;
-    }
-}
