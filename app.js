@@ -24,8 +24,9 @@ function selectQuoteFromArray(arr) {
 function updateQuotes() {
   quote.innerText = newQuote.text
   author.innerText = newQuote.author
-  if (quote.innerText.split(" ").length > 25) {
-    quote.style.fontSize = "2rem"
+  if (quote.innerText.split(" ").length > 20) {
+    quote.style.fontSize = "5vh"
+    author.style.fontSize = "5vh"
   } else {
     quote.style.fontSize = "10vmin"
     author.style.fontSize = "7vh"
