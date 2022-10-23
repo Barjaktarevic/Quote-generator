@@ -91,7 +91,7 @@ button:active {
   
 .made-by {
     position: absolute;
-    bottom: 1%;
+    top: 1%;
     right: 1%;
     font-size: 5vmin;
     text-align: center;
@@ -117,4 +117,8 @@ button:active {
   }
 
 
-
+@media screen and (max-width: 500px) {
+    .made-by{
+        font-size: 3vmin;
+    }
+}
